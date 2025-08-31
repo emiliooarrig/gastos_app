@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #3498db;
+    --primary-dark: #2c80b4;
+    --secondary-color: #2ecc71;
+    --background-color: #f4f6f8;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --border-radius: 6px;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.formulario {
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+}
+
+.pregunta__form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.pregunta__form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.input__form {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input__form:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+.btn {
+    padding: 14px;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-dark);
+}

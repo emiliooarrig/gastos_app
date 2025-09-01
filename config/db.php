@@ -1,9 +1,11 @@
 <?php
-// Configuración de la conexión
-$host = "localhost";      // o la IP/hostname de tu servidor
-$dbname = "control_gastos";      // nombre de tu base de datos
-$username = "root"; // usuario de la base de datos
-$password = ""; // contraseña del usuario
+require_once __DIR__ . '/../loadenv.php';
+loadEnv(__DIR__ . '/../.env');
+
+$host = getenv('DB_HOST');      
+$dbname = "control_gastos";     
+$username = "root"; 
+$password = "root"; 
 
 try {
     // Crear instancia de PDO

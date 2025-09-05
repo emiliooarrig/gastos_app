@@ -3,9 +3,9 @@ require_once __DIR__ . '/../loadenv.php';
 loadEnv(__DIR__ . '/../.env');
 
 $host = getenv('DB_HOST');      
-$dbname = "control_gastos";     
-$username = "root"; 
-$password = "root"; 
+$dbname = getenv('DB_NAME');     
+$username = getenv('DB_USERNAME'); 
+$password = getenv('DB_PASS'); 
 
 try {
     // Crear instancia de PDO

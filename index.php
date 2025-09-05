@@ -51,11 +51,12 @@ error_reporting(E_ALL);
                 <tbody>
 
                     <?php foreach ($gastos_array as $row): ?>
-
-                        <td class="fila__tabla"> <?php echo $row["gasto"]; ?></td>
-                        <td class="fila__tabla"> <?php echo $row["monto"]; ?></td>
-                        <td class="fila__tabla"> <?php echo $row["fecha"]; ?></td>
-                        <td class="fila__tabla"> <a href=""> Borrar </a></td>
+                        <tr>
+                            <td class="fila__tabla"> <?php echo $row["gasto"]; ?></td>
+                            <td class="fila__tabla"> <?php echo $row["monto"]; ?></td>
+                            <td class="fila__tabla"> <?php echo $row["fecha"]; ?></td>
+                            <td class="fila__tabla"> <a href=""> Borrar </a></td>
+                        </tr>
 
                     <?php endforeach; ?>
 
